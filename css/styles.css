@@ -661,14 +661,19 @@ justify-content: center;
     width: 24px;
     height:24px;
 
-    color: var(--secondary-bg-cl);
+    fill: var(--dark-bcg);
 
     background-color: var(--accent-color);
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
 
     cursor: pointer;
+
+    transition: background-color var(--animation) fill var(--animation);
 }
-.modal-icon{
-    fill: var(--dark-bcg);
+.modal-btn:hover,
+.modal-btn:focus{
+background-color: var(--hover-color);
+fill: var(--ultimate-white);
 }
+
